@@ -1,0 +1,210 @@
+/* =====================
+   RESET & BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1f2937;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 4.5rem 0;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    margin-left: 1.6rem;
+    font-weight: 500;
+    color: #cbd5f5;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #020617);
+    color: #ffffff;
+    text-align: center;
+    padding: 7rem 1.5rem;
+}
+
+.hero p {
+    font-size: 1.35rem;
+    max-width: 750px;
+    margin: 1.2rem auto 2.5rem;
+    color: #e5e7eb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    background: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* =====================
+   ABOUT
+===================== */
+.about p {
+    max-width: 850px;
+    font-size: 1.15rem;
+    color: #374151;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    padding: 1.8rem;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =====================
+   PROJECTS
+===================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: linear-gradient(180deg, #ffffff, #f1f5f9);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    transition: all 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card h3 {
+    color: #1e3a8a;
+}
+
+.project-card p {
+    font-size: 1.05rem;
+    color: #475569;
+}
+
+/* =====================
+   CONTACT
+===================== */
+.contact p {
+    font-size: 1.1rem;
+}
+
+.contact a {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.8rem;
+    font-size: 0.95rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}

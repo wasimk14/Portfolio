@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aslam Lukde | Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+
+
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <h1>Aslam Lukde</h1>
+    <div class="subtitle">
+        Senior Pharmacovigilance Professional | PV Analytics
+    </div>
+
+    <div class="contact">
+        <span>Mumbai, India</span>
+        <span>Email: wasimk14@gmail.com</span>
+        <span>Phone: +91 7506930012</span>
+    </div>
+
+    <!-- SUMMARY -->
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Senior Pharmacovigilance professional with 10+ years of experience across
+            ICSR processing, regulatory compliance, audit readiness, and team leadership.
+            Strong exposure to SQL- and Python-based analytics for PV workflow checks,
+            quality reporting, adverse event summaries, and performance analytics.
+            Adept at translating pharmacovigilance domain expertise into data-driven insights.
+        </p>
+    </section>
+
+    <!-- CORE SKILLS -->
+    <section>
+        <h2>Core Skills</h2>
+
+        <strong>Pharmacovigilance</strong>
+        <ul>
+            <li>ICSR Processing, Adverse Events, SAE</li>
+            <li>MedDRA Coding, E2B, Literature Screening</li>
+            <li>Signal Detection (Supportive Analytics)</li>
+            <li>PSUR, RMP, CAPA, RCA</li>
+            <li>EMA, FDA, ICH-GCP</li>
+            <li>Quality Control (QC) & Quality Assurance (QA)</li>
+        </ul>
+
+        <strong>Tools & Analytics</strong>
+        <div class="skills-grid">
+            <div>Argus Safety</div>
+            <div>SQL Server</div>
+            <div>Python (Pandas, NumPy)</div>
+            <div>Microsoft Excel</div>
+            <div>AE & Safety Summaries</div>
+            <div>KPI & Performance Reporting</div>
+            <div>Matplotlib & Seaborn</div>
+            <div>Data Validation & Quality Metrics</div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+        <h2>Professional Experience</h2>
+
+        <p class="job-title">
+            Team Manager – Pharmacovigilance
+            <span class="date">Oct 2017 – Sep 2024</span>
+        </p>
+        <p class="company">MedVigil Clinical Research | Mumbai, India</p>
+        <ul>
+            <li>Led end-to-end ICSR operations for EU and US markets.</li>
+            <li>Managed and mentored a team of 25+ pharmacovigilance professionals.</li>
+            <li>Developed Python-based scripts for workflow checks, quality summaries, AE summaries, and employee utilization charts.</li>
+            <li>Built KPI and management reports using SQL and Microsoft Excel.</li>
+            <li>Supported audit readiness and achieved zero major findings in EMA and HPRA audits.</li>
+        </ul>
+
+        <p class="job-title">
+            Drug Safety Specialist
+            <span class="date">May 2014 – Oct 2017</span>
+        </p>
+        <p class="company">Cognizant Technology Solutions | Mumbai, India</p>
+        <ul>
+            <li>Processed ICSRs from clinical trials, spontaneous, and literature sources.</li>
+            <li>Performed MedDRA coding and safety narrative writing.</li>
+            <li>Conducted quality reviews and supported workflow and process improvements.</li>
+        </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+        <p>
+            <strong>Bachelor of Pharmacy (B.Pharm)</strong><br>
+            2012
+        </p>
+    </section>
+
+</div>
+
+<a href="{{ url_for('download', filename='Aslam_Lukde_CV.pdf') }}"
+   class="btn">
+   Download PDF
+</a>
+
+
+</body>
+</html>
