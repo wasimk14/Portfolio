@@ -2,141 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aslam Lukde | Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+    <title>Aslam Lukde | Portfolio</title>
+
+    <meta name="description" content="Portfolio of Aslam Lukde – Pharmacovigilance, SQL, Python, and Healthcare Analytics">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-<div class="resume">
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="container nav">
+        <strong>Aslam Lukde</strong>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Competencies</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="{{ url_for('resume') }}">View CV</a>
+        </nav>
+    </div>
+</header>
 
+<!-- ===== HERO ===== -->
+<section class="hero">
     <h1>Aslam Lukde</h1>
-
-    <p class="contact">
-        Mumbai, India |
-        <a href="mailto:wasimk14@gmail.com">wasimk14@gmail.com</a> |
-        +91 7506930012
+    <p>
+        Senior Pharmacovigilance Professional with 10+ years of experience in
+        ICSR processing, regulatory compliance (EMA/FDA), and safety data management.
+        Strong exposure to SQL- and Python-based healthcare analytics.
     </p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
 
-    <!-- ===== PROFESSIONAL SUMMARY ===== -->
-    <section>
-        <h2>Professional Summary</h2>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Me</h2>
+
         <p>
-            Senior Pharmacovigilance professional with 10+ years of experience in ICSR processing,
-            regulatory compliance, audit readiness, and team leadership. Strong hands-on exposure to
-            Python- and SQL-based analytics for pharmacovigilance workflow checks, adverse event
-            summaries, quality metrics, and operational dashboards. Proficient in applying
-            descriptive statistics, data visualization, and exploratory analysis to support PV
-            decision-making. Highly motivated self-learner with the ability to invest focused effort
-            to deliver data-driven results.
+            I am a senior Pharmacovigilance professional with over 10 years of experience
+            across ICSR processing, audit readiness, regulatory submissions, and team leadership.
+            I have worked extensively with EMA and FDA requirements, Argus Safety, and MedDRA.
         </p>
-    </section>
 
-    <!-- ===== CORE SKILLS ===== -->
-    <section>
-        <h2>Core Skills</h2>
+        <p>
+            Alongside PV operations, I apply SQL and Python-based analytics to support
+            quality reporting, safety trend monitoring, and operational dashboards.
+            My focus is on interpretable, regulatory-aligned analytics rather than
+            black-box or automated decision-making.
+        </p>
+    </div>
+</section>
 
-        <strong>Pharmacovigilance & Regulatory</strong>
-        <ul>
-            <li>ICSR Processing, Adverse Events (AE/SAE)</li>
-            <li>MedDRA Coding, E2B Reporting, Literature Screening</li>
-            <li>PSUR, RMP, CAPA, RCA</li>
-            <li>Audit Readiness, QC/QA</li>
-            <li>EMA, FDA, ICH-GCP</li>
-        </ul>
+<!-- ===== CORE COMPETENCIES ===== -->
+<section id="skills">
+    <div class="container">
+        <h2>Core Competencies</h2>
 
-        <strong>Tools & Systems</strong>
-        <ul>
-            <li>Argus Safety</li>
-            <li>SQL Server</li>
-            <li>Microsoft Excel</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-card">ICSR Processing</div>
+            <div class="skill-card">Adverse Event Reporting</div>
+            <div class="skill-card">EMA / FDA Submissions</div>
+            <div class="skill-card">Argus Safety</div>
+            <div class="skill-card">MedDRA / E2B</div>
+            <div class="skill-card">ICH-GCP</div>
+            <div class="skill-card">SQL / SQL Server</div>
+            <div class="skill-card">Data Warehousing</div>
+            <div class="skill-card">Python (Pandas, NumPy)</div>
+            <div class="skill-card">Data Visualization</div>
+            <div class="skill-card">Audit Readiness</div>
+            <div class="skill-card">Team Leadership</div>
+        </div>
+    </div>
+</section>
 
-        <strong>Data Analytics & Programming</strong>
-        <ul>
-            <li>Python (Pandas, NumPy)</li>
-            <li>Statistical Analysis (descriptive statistics, trend analysis, basic regression)</li>
-            <li>Data Visualization (Matplotlib, Plotly)</li>
-            <li>Web Scraping (Python)</li>
-            <li>HTML, Flask, Bootstrap</li>
-            <li>SQL (querying, aggregation, validation)</li>
-        </ul>
-    </section>
-
-    <!-- ===== PROFESSIONAL EXPERIENCE ===== -->
-    <section>
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+    <div class="container">
         <h2>Professional Experience</h2>
 
-        <h3>Team Manager – Pharmacovigilance</h3>
-        <p class="company">
-            MedVigil Clinical Research | Mumbai, India<br>
-            <span class="date">Oct 2017 – Sep 2024</span>
-        </p>
+        <div class="project-card">
+            <h3>Team Manager – MedVigil Clinical Research</h3>
+            <p><em>Mumbai | Oct 2017 – Sep 2024</em></p>
+            <ul>
+                <li>Led a team of 25+ pharmacovigilance professionals managing end-to-end ICSR processing</li>
+                <li>Organized and maintained a highly compliant Pharmacovigilance system</li>
+                <li>Led internal and external PV audits and inspections</li>
+                <li>Reduced case turnaround time by 25% through workflow optimization</li>
+                <li>Achieved zero major findings in EMA and HPRA audits</li>
+                <li>Developed SOPs, training manuals, and quality dashboards</li>
+                <li>Coordinated cross-functional activities with QA, medical, and IT teams</li>
+            </ul>
+        </div>
 
-        <ul>
-            <li>Led end-to-end ICSR operations for EU and US markets ensuring EMA and FDA compliance</li>
-            <li>Managed and mentored a team of 25+ pharmacovigilance professionals</li>
-            <li>Developed Python-based analytics scripts for workflow checks, AE summaries, KPI dashboards, and quality metrics</li>
-            <li>Applied Pandas and NumPy for data cleaning, validation, and descriptive analysis of PV datasets</li>
-            <li>Built management-ready visualizations using Matplotlib and Plotly</li>
-            <li>Applied basic statistical and regression techniques for exploratory and trend analysis</li>
-            <li>Leveraged SQL for querying large safety datasets and operational reporting</li>
-            <li>Achieved zero major findings in EMA and HPRA regulatory audits</li>
-        </ul>
+        <div class="project-card">
+            <h3>Drug Safety Specialist – Cognizant Technology Solutions</h3>
+            <p><em>Mumbai | May 2014 – Oct 2017</em></p>
+            <ul>
+                <li>Processed and reviewed ICSRs in compliance with global regulations</li>
+                <li>Performed MedDRA coding and quality checks in Argus Safety</li>
+                <li>Supported regulatory submissions and periodic safety reports</li>
+                <li>Mentored new hires and supported international teams</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <h3>Drug Safety Specialist</h3>
-        <p class="company">
-            Cognizant Technology Solutions | Mumbai, India<br>
-            <span class="date">May 2014 – Oct 2017</span>
-        </p>
+<!-- ===== PROJECTS & CERTIFICATIONS ===== -->
+<section id="projects">
+    <div class="container">
+        <h2>Certifications & Analytics Projects</h2>
 
-        <ul>
-            <li>Processed ICSRs from clinical trials, spontaneous, and literature sources</li>
-            <li>Performed MedDRA coding and safety narrative writing</li>
-            <li>Conducted quality reviews and supported workflow improvements</li>
-        </ul>
-    </section>
+        <div class="projects-grid">
 
-    <!-- ===== EDUCATION ===== -->
-    <section>
-        <h2>Education</h2>
+            <div class="project-card">
+                <h3>SQL for Data Analysis & Warehousing (Udemy)</h3>
+                <ul>
+                    <li>Built an enterprise-level SQL Data Warehouse</li>
+                    <li>Optimized ETL processes and data pipelines</li>
+                    <li>Developed complex SQL queries for reporting and analysis</li>
+                    <li>Conducted Exploratory Data Analysis (EDA) on real-world datasets</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Python for Data Science & Exploratory Analysis</h3>
+                <p>
+                    Hands-on experience using Python (Pandas, NumPy) for data cleaning,
+                    validation, transformation, and exploratory analysis on healthcare
+                    and pharmacovigilance datasets. Strong focus on reproducible and
+                    interpretable analytics.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Visualization & Signal Detection Analytics</h3>
+                <p>
+                    Experienced in translating complex datasets into interpretable visual
+                    insights using Matplotlib and Plotly. Applied SQL- and Python-based
+                    analytics to support FDA-oriented signal detection, adverse event
+                    aggregation, and trend monitoring.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact</h2>
+
         <p>
-            <strong>Bachelor of Pharmacy (B.Pharm)</strong><br>
-            2012
+            Email:
+            <a href="mailto:wasimk14@gmail.com">wasimk14@gmail.com</a><br>
+
+            GitHub:
+            <a href="https://github.com/wasimk14" target="_blank">
+                github.com/wasimk14
+            </a><br>
+
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/aslam-lukde-208625355" target="_blank">
+                linkedin.com/in/aslam-lukde-208625355
+            </a>
         </p>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== DATA SCIENCE & PYTHON EXPERTISE ===== -->
-    <section>
-        <h2>Data Science & Python Expertise</h2>
-
-        <p>
-            Hands-on experience using Python (Pandas, NumPy) for data cleaning, validation,
-            transformation, and exploratory data analysis on large healthcare and pharmacovigilance
-            datasets. Proficient in deriving descriptive statistics, identifying patterns, detecting
-            anomalies, and performing feature-level analysis to support evidence-based insights.
-        </p>
-
-        <p>
-            Experienced in translating complex datasets into interpretable visual insights using
-            Matplotlib and Plotly. Skilled in visualization-led validation, stability analysis,
-            and alignment of data-driven patterns with established clinical knowledge.
-        </p>
-
-        <p>
-            Applied Python- and SQL-based analytics to support FDA-oriented pharmacovigilance
-            activities, including adverse event aggregation, trend monitoring, and exploratory
-            signal detection.
-        </p>
-    </section>
-
-</div>
-
-<!-- ===== DOWNLOAD BUTTON ===== -->
-<a href="{{ url_for('download', filename='Aslam_Lukde_CV.pdf') }}" class="btn">
-    Download PDF
-</a>
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Aslam Lukde | Pharmacovigilance & Data Analytics</p>
+</footer>
 
 </body>
 </html>
